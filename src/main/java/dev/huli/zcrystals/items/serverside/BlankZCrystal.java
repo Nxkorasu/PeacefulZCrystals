@@ -107,10 +107,10 @@ public class BlankZCrystal extends SimplePolymerItem {
         }
         if(block == Blocks.SHULKER_BOX){
             heldStack.decrement(1);
-            player.giveItemStack(new ItemStack(ZCrystalsServerSide.FLYNIUM_Z));
+            player.giveItemStack(new ItemStack(ZCrystalsServerSide.FLYINIUM_Z));
             return ActionResult.SUCCESS;
         }
-        if(block == Blocks.CAKE_BLOCK){
+        if(block == Blocks.CAKE){
             heldStack.decrement(1);
             player.giveItemStack(new ItemStack(ZCrystalsServerSide.FAIRIUM_Z));
             return ActionResult.SUCCESS;
