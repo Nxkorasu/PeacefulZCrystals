@@ -2,7 +2,10 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [{
     "item": "zcrystals:normalium_z"
-  }
+  },
+    {
+      "item": "cobblemon:leftovers"
+    }
   ],
   "result": {
     "item":"zcrystals:snorlium_z",

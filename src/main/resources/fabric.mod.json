@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "id": "cobbletransformations",
-  "version": "2.0",
-  "name": "CobbleTransformations",
+  "id": "huliszcrystals",
+  "version": "1.3",
+  "name": "HulisZCrystals",
   "description": "Fixes some miscellaneous issues in Cobblemon",
   "authors": [
     "DujmovicD",
