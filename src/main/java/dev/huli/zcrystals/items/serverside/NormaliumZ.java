@@ -28,22 +28,4 @@ public class NormaliumZ extends SimplePolymerItem {
         this.modelData = ZCrystalsServerSide.normaliumZModelData;
         return this.modelData.value();
     }
-
-
-    @Override
-    public ActionResult useOnEntity(ItemStack itemStack, PlayerEntity playerEntity, LivingEntity livingEntity, Hand hand) {
-        if(livingEntity instanceof PokemonEntity pokemonEntity){
-            if(pokemonEntity.getExposedSpecies().getName().equalsIgnoreCase("eevee")){
-                itemStack.decrement(1);
-                playerEntity.giveItemStack(new ItemStack(ZCrystalsServerSide.EEVIUM_Z));
-                return ActionResult.SUCCESS;
-            }
-            if(pokemonEntity.getExposedSpecies().getName().equalsIgnoreCase("snorlax")){
-                itemStack.decrement(1);
-                playerEntity.giveItemStack(new ItemStack(ZCrystalsServerSide.SNORLIUM_Z));
-                return ActionResult.SUCCESS;
-            }
-        }
-        return ActionResult.PASS;
-    }
 }

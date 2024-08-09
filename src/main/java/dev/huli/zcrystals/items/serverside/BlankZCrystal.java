@@ -110,7 +110,7 @@ public class BlankZCrystal extends SimplePolymerItem {
             player.giveItemStack(new ItemStack(ZCrystalsServerSide.FLYINIUM_Z));
             return ActionResult.SUCCESS;
         }
-        if(block == Blocks.CAKE){
+        if(block == Blocks.AMETHYST_BLOCK){
             heldStack.decrement(1);
             player.giveItemStack(new ItemStack(ZCrystalsServerSide.FAIRIUM_Z));
             return ActionResult.SUCCESS;

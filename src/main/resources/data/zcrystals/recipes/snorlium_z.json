@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [{
+    "item": "zcrystals:normalium_z"
+  }
+  ],
+  "result": {
+    "item":"zcrystals:snorlium_z",
+    "count": 1
+  }
+}
