@@ -1,6 +1,5 @@
 # Hulis Z-Crystals
-> Hulis Z-Crystals is a mod that adds Z-Crystals to Minecraft<br>
-> If you like my work consider supporting me on [Ko-fi](https://ko-fi.com/huligani123)<br>
+> Hulis Z-Crystals is a mod that adds Z-Crystals to Minecraft´s mod "Cobblemon"<br>
 
 ## Table of Contents
 - [Configuration](#configuration)
@@ -47,18 +46,17 @@ Once you have the Z-Ring you need to right-click in the Air to enable using Z-Mo
 > ### Rockium Z
 > Made by right-clicking Bedrock with a Blank Z-Crystal<br>
 > ### Steelium Z
-> Made by right-clicking an Iron Golem with a Blank Z-Crystal<br>
+> Made by right-clicking an Iron Block with a Blank Z-Crystal<br>
 > ### Poisonium Z
-> Made by right-clicking a Potato Crop with a Blank Z-Crystal **(Peaceful Mode Only)**<br>
-> Made by right-clicking a Cave Spider with a Blank Z-Crystal **(Every Mode except Peaceful)**<br>
+> Made by right-clicking a Potato Crop with a Blank Z-Crystal<br>
 > ### Ghostium Z
 > Made by right-clicking Soul Sand with a Blank Z-Crystal<br>
 > ### Darkinium Z
 > Made by right-clicking Reinforced Deepslate with a Blank Z-Crystal<br>
 > ### Fairium Z
-> Made by right-clicking a Vex with a Blank Z-Crystal<br>
+> Made by right-clicking an Amethyst Block with a Blank Z-Crystal<br>
 > ### Dragonium Z
-> Made by right-clicking an End Portal Frame with a Blank Z-Crystal<br>
+> Made by right-clicking an Dragon Head Frame with a Blank Z-Crystal<br>
 > ### Buginium Z
 > Made by right-clicking a Beehive with a Blank Z-Crystal<br>
 > ### Psychium Z
@@ -66,45 +64,47 @@ Once you have the Z-Ring you need to right-click in the Air to enable using Z-Mo
 > ### Groundium Z
 > Made by right-clicking a Mud Block with a Blank Z-Crystal<br>
 > ### Flyinium Z
-> Made by right-clicking a Chicken with a Blank Z-Crystal<br>
+> Made by right-clicking a non-dyed Shulker Box with a Blank Z-Crystal<br>
  
 ## Pokémon Specific Z-Crystals
 > ### Aloraichium Z
 > Made by right-clicking an Alolan Raichu with an Electrium Z<br>
 > ### Decidium Z
-> Made by right-clicking a Decidueye with a Grassium Z<br>
+> Made by right-clicking a Target with a Grassium Z<br>
 > ### Incinium Z
-> Made by right-clicking an Incineroar with a Firium Z<br>
+> Made by right-clicking an Sculk Block with a Firium Z<br>
 > ### Primarium Z
-> Made by right-clicking a Primarina with a Waterium Z<br>
+> Made by right-clicking a Brain Coral Block with a Waterium Z<br>
 > ### Pikanium Z
-> Made by right-clicking a Pikachu with an Electrium Z<br>
+> Made by right-clicking a Lightning Rod with an Electrium Z<br>
 > ### Pikashunium Z
-> Made by right-clicking a Hat Pikachu with an Electrium Z<br>
+> Made by crafting an Electric Z-Crystal with a diamond helmet in a shapeless recipe<br>
+> ![Pikashunium Z](https://i.imgur.com/aHxAvlc.png)<br>
 > ### Tapunium Z
-> Made by right-clicking any Tapu with a Fairium Z<br>
+> Made by right-clicking Brain Coral Block with a Fairium Z<br>
 > ### Marshadium Z
-> Made by right-clicking a Marshadow with a Ghostium Z<br>
+> Made by right-clicking a Target with a Ghostium Z<br>
 > ### Mimikium Z
-> Made by right-clicking a Mimikyu with a Ghostium Z<br>
+> Made by right-clicking a Brain Coral Block with a Ghostium Z<br>
 > ### Lycanium Z
-> Made by right-clicking a Lycanroc with a Rockium Z<br>
+> Made by right-clicking an Cobblestone with a Rockium Z<br>
 > ### Kommonium Z
-> Made by right-clicking a Kommo-o with a Dragonium Z<br>
+> Made by right-clicking a Target with a Dragonium Z<br>
 > ### Solganium Z
-> Made by right-clicking a Solgaleo with a Psychium Z<br>
+> Made by right-clicking a Magma Block with a Psychium Z<br>
 > ### Lunalium Z
-> Made by right-clicking a Lunala with a Psychium Z<br>
+> Made by right-clicking an End Stone with a Psychium Z<br>
 > ### Ultranecrozium Z
-> Made by right-clicking a Necrozma with a Psychium Z (Currently not working in battle)<br>
+> Made by right-clicking a Beacon with a Psychium Z (Currently not working in battle)<br>
 > ### Eevium Z
-> Made by right-clicking an Eevee with a Normalium Z<br>
+> Made crafting all the eevee-lution types´ z crystals with a Normalium Z<br>
+> ![Eevium Z](https://i.imgur.com/dKQ1nVQ.png)
 > ### Mewnium Z
-> Made by right-clicking a Mew with a Psychium Z<br>
+> Made by right-clicking a Brick block with a Psychium Z<br>
 > ### Snorlium Z
-> Made by right-clicking a Snorlax with a Normalium Z<br>
+> Made by crafting a leftovers with a Normalium Z in a shapeless recipe<br>
+> ![Snorlium Z](https://i.imgur.com/x3Gzac2.png)
 
 ## Serverside Resource Pack
 > The Mod comes with a Serverside Resource Pack that changes the Z-Crystals to look like the ones from the games<br>
-> You will need to merge the resource pack with your own Server Resource Pack if you have one<br>
-> You can find the Resource Pack in this GitHub Repository [Hulis-Z-Crystals-Resource-Pack.zip](https://github.com/dujmovic-d/HulisZCrystals/blob/master/HulisZCrystalsResourcePack.zip)<br>
+> Link to be added (Resouce pack is included in the repo)<br>
