@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " IC",
+    "ISI",
+    "CI "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:sculk_catalyst"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:copper_block"
+    }
+  },
+  "result": {
+    "item": "zcrystals:z_ring",
+    "count": 1
+  }
+}
