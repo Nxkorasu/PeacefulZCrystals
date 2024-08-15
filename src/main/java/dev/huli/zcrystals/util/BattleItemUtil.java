@@ -38,6 +38,7 @@ public class BattleItemUtil {
         CobblemonHeldItemManager.INSTANCE.registerRemap(ZCrystalsServerSide.TAPUNIUM_Z.asItem(),"tapuniumz");
         CobblemonHeldItemManager.INSTANCE.registerRemap(ZCrystalsServerSide.ULTRANECROZIUM_Z.asItem(),"ultranecroziumz");
         CobblemonHeldItemManager.INSTANCE.registerRemap(ZCrystalsServerSide.WATERIUM_Z.asItem(),"wateriumz");
+        CobblemonHeldItemManager.INSTANCE.registerRemap(ZCrystalsServerSide.BOOSTER_ENERGY.asItem(),"boosterenergy");
     }
 
     public static void registerClientSideItems(){
@@ -75,5 +76,6 @@ public class BattleItemUtil {
         CobblemonHeldItemManager.INSTANCE.registerRemap(ZCrystalsClientSide.TAPUNIUM_Z,"tapuniumz");
         CobblemonHeldItemManager.INSTANCE.registerRemap(ZCrystalsClientSide.ULTRANECROZIUM_Z,"ultranecroziumz");
         CobblemonHeldItemManager.INSTANCE.registerRemap(ZCrystalsClientSide.WATERIUM_Z,"wateriumz");
+        CobblemonHeldItemManager.INSTANCE.registerRemap(ZCrystalsClientSide.BOOSTER_ENERGY,"boosterenergy");
     }
 }

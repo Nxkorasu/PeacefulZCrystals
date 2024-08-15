@@ -2,7 +2,6 @@ package dev.huli.zcrystals.util;
 
 import dev.huli.zcrystals.ZCrystals;
 import dev.huli.zcrystals.items.clientside.*;
-import eu.pb4.polymer.resourcepack.api.PolymerModelData;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.Item;
@@ -92,6 +91,8 @@ public class ZCrystalsClientSide {
             new UltranecrozmiumZ(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
     public static final WateriumZ WATERIUM_Z = Registry.register(Registries.ITEM, new Identifier(MOD_ID, "waterium_z"),
             new WateriumZ(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
+    public static final BoosterEnergy BOOSTER_ENERGY = Registry.register(Registries.ITEM, new Identifier(MOD_ID, "booster_energy"),
+            new BoosterEnergy(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC)));
 
     public static final ItemGroup Z_CRYSTALS = FabricItemGroup.builder()
             .icon(ULTRANECROZIUM_Z::getDefaultStack)
@@ -135,6 +136,7 @@ public class ZCrystalsClientSide {
                 entries.add(WATERIUM_Z);
                 entries.add(BLANK_Z_CRYSTAL);
                 entries.add(Z_RING);
+                entries.add(BOOSTER_ENERGY);
             }))
             .build();
 

@@ -22,7 +22,7 @@ public class ZCrystalsServerSide {
             flyiniumZModelData, ghostiumZModelData, grassiumZModelData, groundiumZModelData, iciumZModelData, inciniumZModelData, kommoniumZModelData,
             lunaliumZModelData,lycaniumZModelData,marshadiumZModelData, mewniumZModelData, mimikiumZModelData, normaliumZModelData,
             pikaniumZModelData,pikashuniumZModelData, poisoniumZModelData, primariumZModelData, psychiumZModelData, rockiumZModelData, snorliumZModelData,
-            solganiumZModelData, steeliumZModelData, tapuniumZModelData, ultranecroziumZModelData, wateriumZModelData, blankZCrystalModelData, zringModelData;
+            solganiumZModelData, steeliumZModelData, tapuniumZModelData, ultranecroziumZModelData, wateriumZModelData, blankZCrystalModelData, zringModelData, boosterenergyModelData;
 
     public static final BlankZCrystal BLANK_Z_CRYSTAL = Registry.register(Registries.ITEM, new Identifier(MOD_ID, "blank_z_crystal"),
             new BlankZCrystal(new FabricItemSettings().maxCount(1).rarity(Rarity.RARE), Items.EMERALD));
@@ -99,6 +99,8 @@ public class ZCrystalsServerSide {
             new UltranecrozmiumZ(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC), Items.EMERALD));
     public static final WateriumZ WATERIUM_Z = Registry.register(Registries.ITEM, new Identifier(MOD_ID, "waterium_z"),
             new WateriumZ(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC), Items.EMERALD));
+    public static final BoosterEnergy BOOSTER_ENERGY = Registry.register(Registries.ITEM, new Identifier(MOD_ID, "booster_energy"),
+            new BoosterEnergy(new FabricItemSettings().maxCount(1).rarity(Rarity.EPIC), Items.EMERALD));
 
 
     public static void requestModel(){
@@ -140,6 +142,7 @@ public class ZCrystalsServerSide {
         tapuniumZModelData = PolymerResourcePackUtils.requestModel(Items.EMERALD, new Identifier(MOD_ID, "item/tapunium_z"));
         ultranecroziumZModelData = PolymerResourcePackUtils.requestModel(Items.EMERALD, new Identifier(MOD_ID, "item/ultranecrozium_z"));
         wateriumZModelData = PolymerResourcePackUtils.requestModel(Items.EMERALD, new Identifier(MOD_ID, "item/waterium_z"));
+        boosterenergyModelData = PolymerResourcePackUtils.requestModel(Items.EMERALD, new Identifier(MOD_ID, "item/booster_energy"));
 
     }
 
@@ -184,6 +187,7 @@ public class ZCrystalsServerSide {
                 entries.add(WATERIUM_Z);
                 entries.add(BLANK_Z_CRYSTAL);
                 entries.add(Z_RING);
+                entries.add(BOOSTER_ENERGY);
             }))
             .build();
 
