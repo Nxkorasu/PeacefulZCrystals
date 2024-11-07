@@ -5,7 +5,6 @@ import com.google.gson.stream.JsonReader;
 import dev.huli.zcrystals.ZCrystals;
 import dev.huli.zcrystals.manager.CobbleTransformationsConfigDataManager;
 import dev.huli.zcrystals.util.Adapters;
-
 import java.io.*;
 
 public class CobbleTransformationsConfig {

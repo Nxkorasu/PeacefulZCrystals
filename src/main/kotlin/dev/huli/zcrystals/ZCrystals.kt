@@ -9,7 +9,7 @@ import dev.huli.zcrystals.commands.GiveKeyItemCommand
 import dev.huli.zcrystals.config.CobbleTransformationsConfig
 import dev.huli.zcrystals.permissions.CobbleTransformationsPermissions
 import dev.huli.zcrystals.util.BattleItemUtil
-import dev.huli.zcrystals.util.ZCrystalsServerSide
+import dev.huli.zcrystals.util.ZCrystals
 import eu.pb4.polymer.resourcepack.api.PolymerResourcePackUtils
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback
 import net.fabricmc.loader.api.FabricLoader
@@ -21,13 +21,12 @@ import java.io.File
 
 object ZCrystals {
 
-    final var MOD_ID = "zcrystals"
-    const val MOD_NAME = "ZCrystalsServerSide"
+    var MOD_ID = "zcrystals"
+    const val MOD_NAME = "ZCrystals"
     lateinit var SERVER: MinecraftServer
     val log: Logger = LogManager.getLogger(MOD_NAME)
     lateinit var config: CobbleTransformationsConfig
     lateinit var permissions: CobbleTransformationsPermissions
-
 
     lateinit var configDir: File
 
@@ -35,25 +34,15 @@ object ZCrystals {
         config = CobbleTransformationsConfig()
         permissions = CobbleTransformationsPermissions()
         reload()
-
-        if (config.cobbleTransformationsConfigDataManager.SERVERSIDE) {
-
-            PolymerResourcePackUtils.markAsRequired()
-            val isModValid = PolymerResourcePackUtils.addModAssets(MOD_ID)
-                // Z-Crystals
-                ZCrystalsServerSide.requestModel()
-                ZCrystalsServerSide.registerItemGroup()
-
-            // Register Battle Items
-            BattleItemUtil.registerServerSideItems()
-        }
-        else{
-            BattleItemUtil.registerClientSideItems()
-        }
-
+        PolymerResourcePackUtils.markAsRequired()
+        PolymerResourcePackUtils.addModAssets(MOD_ID)
+        // Z-Crystals
+        ZCrystals.requestModel()
+        ZCrystals.registerItemGroup()
+        // Register Battle Items
+        BattleItemUtil.registerServerSideItems()
         // Load official Cobblemon's config.
         CobblemonConfig()
-
         CommandRegistrationCallback.EVENT.register(
             CommandRegistrationCallback { dispatcher, _, _ ->
                 registerCommands(
