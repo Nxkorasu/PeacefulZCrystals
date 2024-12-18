@@ -107,7 +107,7 @@ Once you have the Z-Ring you need to right-click in the Air to enable using Z-Mo
 
 ## Miscellaneous Items
 > ## Booster energy
-> Made by using this recipe:
+> Made by using this recipe:<br>
 > ![Booster Energy](https://i.imgur.com/wO3dszw.png)
 ## Serverside Resource Pack
 > The Mod comes with a Serverside Resource Pack that changes the Z-Crystals to look like the ones from the games<br>
