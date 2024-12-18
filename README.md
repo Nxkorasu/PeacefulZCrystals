@@ -65,10 +65,10 @@ Once you have the Z-Ring you need to right-click in the Air to enable using Z-Mo
 > Made by right-clicking a Mud Block with a Blank Z-Crystal<br>
 > ### Flyinium Z
 > Made by right-clicking a non-dyed Shulker Box with a Blank Z-Crystal<br>
- 
+
 ## Pokémon Specific Z-Crystals
 > ### Aloraichium Z
-> Made by right-clicking an Alolan Raichu with an Electrium Z<br>
+> Made by right-clicking an End Gateway with an Electrium Z<br>
 > ### Decidium Z
 > Made by right-clicking a Target with a Grassium Z<br>
 > ### Incinium Z
@@ -105,6 +105,12 @@ Once you have the Z-Ring you need to right-click in the Air to enable using Z-Mo
 > Made by crafting a leftovers with a Normalium Z in a shapeless recipe<br>
 > ![Snorlium Z](https://i.imgur.com/x3Gzac2.png)
 
+## Miscellaneous Items
+> ## Booster energy
+> Made by using this recipe:
+> ![Booster Energy](https://i.imgur.com/wO3dszw.png)
 ## Serverside Resource Pack
 > The Mod comes with a Serverside Resource Pack that changes the Z-Crystals to look like the ones from the games<br>
-> Link to be added (Resouce pack is included in the repo)<br>
+> Resource Pack included with the repo<br>
+## Credits
+> [Booster energy](https://www.deviantart.com/anarlaurendil/gallery) sprite by anarlaurendil
