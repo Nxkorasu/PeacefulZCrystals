@@ -9,8 +9,11 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
+import net.minecraft.item.Items;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Formatting;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Objects;
@@ -26,91 +29,95 @@ public class BlankZCrystal extends SimplePolymerItem {
         Block block = itemUsageContext.getWorld().getBlockState(itemUsageContext.getBlockPos()).getBlock();
         PlayerEntity player = Objects.requireNonNull(itemUsageContext.getPlayer());
         ItemStack heldStack = Objects.requireNonNull(itemUsageContext.getPlayer()).getMainHandStack();
-
-        if(block == Blocks.WHEAT){
-            heldStack.decrement(1);
-            player.giveItemStack(new ItemStack(ZCrystals.GRASSIUM_Z));
-            return ActionResult.SUCCESS;
-        }
-        if(block == Blocks.MAGMA_BLOCK){
-            heldStack.decrement(1);
-            player.giveItemStack(new ItemStack(ZCrystals.FIRIUM_Z));
-            return ActionResult.SUCCESS;
-        }
-        if(block == Blocks.BEEHIVE){
-            heldStack.decrement(1);
-            player.giveItemStack(new ItemStack(ZCrystals.BUGINIUM_Z));
-            return ActionResult.SUCCESS;
-        }
-        if(block == Blocks.POWDER_SNOW){
-            heldStack.decrement(1);
-            player.giveItemStack(new ItemStack(ZCrystals.ICIUM_Z));
-            return ActionResult.SUCCESS;
-        }
-        if(block == Blocks.REINFORCED_DEEPSLATE){
-            heldStack.decrement(1);
-            player.giveItemStack(new ItemStack(ZCrystals.DARKINIUM_Z));
-            return ActionResult.SUCCESS;
-        }
-        if(block == Blocks.BEDROCK){
-            heldStack.decrement(1);
-            player.giveItemStack(new ItemStack(ZCrystals.ROCKIUM_Z));
-            return ActionResult.SUCCESS;
-        }
-        if(block == Blocks.DRAGON_HEAD || block == Blocks.DRAGON_WALL_HEAD){
-            heldStack.decrement(1);
-            player.giveItemStack(new ItemStack(ZCrystals.DRAGONIUM_Z));
-            return ActionResult.SUCCESS;
-        }
-        if(block == Blocks.COPPER_BLOCK){
-            heldStack.decrement(1);
-            player.giveItemStack(new ItemStack(ZCrystals.ELECTRIUM_Z));
-            return ActionResult.SUCCESS;
-        }
-        if(block == Blocks.MUD){
-            heldStack.decrement(1);
-            player.giveItemStack(new ItemStack(ZCrystals.GROUNDIUM_Z));
-            return ActionResult.SUCCESS;
-        }
-        if(block == Blocks.POTATOES){
-            heldStack.decrement(1);
-            player.giveItemStack(new ItemStack(ZCrystals.POISONIUM_Z));
-            return ActionResult.SUCCESS;
-        }
-        if(block == Blocks.SOUL_SAND){
-            heldStack.decrement(1);
-            player.giveItemStack(new ItemStack(ZCrystals.GHOSTIUM_Z));
-            return ActionResult.SUCCESS;
-        }
-        if(block == Blocks.BAMBOO_BLOCK){
-            heldStack.decrement(1);
-            player.giveItemStack(new ItemStack(ZCrystals.FIGHTINIUM_Z));
-            return ActionResult.SUCCESS;
-        }
-        if(block == Blocks.WET_SPONGE){
-            heldStack.decrement(1);
-            player.giveItemStack(new ItemStack(ZCrystals.WATERIUM_Z));
-            return ActionResult.SUCCESS;
-        }
-        if(block == Blocks.END_GATEWAY){
-            heldStack.decrement(1);
-            player.giveItemStack(new ItemStack(ZCrystals.PSYCHIUM_Z));
-            return ActionResult.SUCCESS;
-        }
-        if(block == Blocks.SHULKER_BOX){
-            heldStack.decrement(1);
-            player.giveItemStack(new ItemStack(ZCrystals.FLYINIUM_Z));
-            return ActionResult.SUCCESS;
-        }
-        if(block == Blocks.AMETHYST_BLOCK){
-            heldStack.decrement(1);
-            player.giveItemStack(new ItemStack(ZCrystals.FAIRIUM_Z));
-            return ActionResult.SUCCESS;
-        }
-        if(block == Blocks.IRON_BLOCK){
-            heldStack.decrement(1);
-            player.giveItemStack(new ItemStack(ZCrystals.STEELIUM_Z));
-            return ActionResult.SUCCESS;
+        ItemStack offHand = Objects.requireNonNull(itemUsageContext.getPlayer()).getOffHandStack();
+        if(offHand.getItem().equals(Items.AIR)){
+            if(block == Blocks.WHEAT){
+                heldStack.decrement(1);
+                player.giveItemStack(new ItemStack(ZCrystals.GRASSIUM_Z));
+                return ActionResult.SUCCESS;
+            }
+            if(block == Blocks.MAGMA_BLOCK){
+                heldStack.decrement(1);
+                player.giveItemStack(new ItemStack(ZCrystals.FIRIUM_Z));
+                return ActionResult.SUCCESS;
+            }
+            if(block == Blocks.BEEHIVE){
+                heldStack.decrement(1);
+                player.giveItemStack(new ItemStack(ZCrystals.BUGINIUM_Z));
+                return ActionResult.SUCCESS;
+            }
+            if(block == Blocks.POWDER_SNOW){
+                heldStack.decrement(1);
+                player.giveItemStack(new ItemStack(ZCrystals.ICIUM_Z));
+                return ActionResult.SUCCESS;
+            }
+            if(block == Blocks.REINFORCED_DEEPSLATE){
+                heldStack.decrement(1);
+                player.giveItemStack(new ItemStack(ZCrystals.DARKINIUM_Z));
+                return ActionResult.SUCCESS;
+            }
+            if(block == Blocks.BEDROCK){
+                heldStack.decrement(1);
+                player.giveItemStack(new ItemStack(ZCrystals.ROCKIUM_Z));
+                return ActionResult.SUCCESS;
+            }
+            if(block == Blocks.DRAGON_HEAD || block == Blocks.DRAGON_WALL_HEAD){
+                heldStack.decrement(1);
+                player.giveItemStack(new ItemStack(ZCrystals.DRAGONIUM_Z));
+                return ActionResult.SUCCESS;
+            }
+            if(block == Blocks.COPPER_BLOCK){
+                heldStack.decrement(1);
+                player.giveItemStack(new ItemStack(ZCrystals.ELECTRIUM_Z));
+                return ActionResult.SUCCESS;
+            }
+            if(block == Blocks.MUD){
+                heldStack.decrement(1);
+                player.giveItemStack(new ItemStack(ZCrystals.GROUNDIUM_Z));
+                return ActionResult.SUCCESS;
+            }
+            if(block == Blocks.POTATOES){
+                heldStack.decrement(1);
+                player.giveItemStack(new ItemStack(ZCrystals.POISONIUM_Z));
+                return ActionResult.SUCCESS;
+            }
+            if(block == Blocks.SOUL_SAND){
+                heldStack.decrement(1);
+                player.giveItemStack(new ItemStack(ZCrystals.GHOSTIUM_Z));
+                return ActionResult.SUCCESS;
+            }
+            if(block == Blocks.BAMBOO_BLOCK){
+                heldStack.decrement(1);
+                player.giveItemStack(new ItemStack(ZCrystals.FIGHTINIUM_Z));
+                return ActionResult.SUCCESS;
+            }
+            if(block == Blocks.WET_SPONGE){
+                heldStack.decrement(1);
+                player.giveItemStack(new ItemStack(ZCrystals.WATERIUM_Z));
+                return ActionResult.SUCCESS;
+            }
+            if(block == Blocks.END_GATEWAY){
+                heldStack.decrement(1);
+                player.giveItemStack(new ItemStack(ZCrystals.PSYCHIUM_Z));
+                return ActionResult.SUCCESS;
+            }
+            if(block == Blocks.SHULKER_BOX){
+                heldStack.decrement(1);
+                player.giveItemStack(new ItemStack(ZCrystals.FLYINIUM_Z));
+                return ActionResult.SUCCESS;
+            }
+            if(block == Blocks.AMETHYST_BLOCK){
+                heldStack.decrement(1);
+                player.giveItemStack(new ItemStack(ZCrystals.FAIRIUM_Z));
+                return ActionResult.SUCCESS;
+            }
+            if(block == Blocks.IRON_BLOCK){
+                heldStack.decrement(1);
+                player.giveItemStack(new ItemStack(ZCrystals.STEELIUM_Z));
+                return ActionResult.SUCCESS;
+            }
+        }else{
+            player.sendMessage(Text.literal("Please, Z-Crystal on main hand and empty offhand!").formatted(Formatting.RED),true);
         }
         return ActionResult.PASS;
     }
