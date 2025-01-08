@@ -9,14 +9,11 @@ import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import dev.huli.zcrystals.ZCrystals;
 import dev.huli.zcrystals.permissions.CobbleTransformationsPermissions;
 import net.minecraft.command.argument.EntityArgumentType;
-import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NbtCompound;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.server.network.ServerPlayerEntity;
-import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-import java.util.Random;
+import java.util.Collections;
 
 import static net.minecraft.server.command.CommandManager.argument;
 import static net.minecraft.server.command.CommandManager.literal;
@@ -54,8 +51,10 @@ public class GiveKeyItemCommand {
         if (player != null) {
             switch (keyItem){
                 case "ZRing":
-                    Cobblemon.playerData.get(player).getKeyItems().add(new Identifier("cobblemon:z_ring"));
+                    Cobblemon.playerDataManager.getGenericData(player.getUuid()).setKeyItems(Collections.singleton(Identifier.of("cobblemon","z_ring")));
                     break;
+                default:
+                    throw new IllegalStateException("Unexpected value: " + keyItem);
             }
 
         }

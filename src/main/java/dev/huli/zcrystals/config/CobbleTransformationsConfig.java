@@ -17,7 +17,6 @@ public class CobbleTransformationsConfig {
 
     public static void writeConfig(){
         File dir = ZCrystals.INSTANCE.getConfigDir();
-        dir.mkdirs();
         Gson gson = Adapters.MAIN_CONFIG_GSON;
         CobbleTransformationsConfig config = new CobbleTransformationsConfig();
         try{
@@ -25,7 +24,6 @@ public class CobbleTransformationsConfig {
             if(file.exists()){
                 return;
             }
-            file.createNewFile();
             FileWriter writer = new FileWriter(file);
             String json = gson.toJson(config);
             writer.write(json);
@@ -38,7 +36,6 @@ public class CobbleTransformationsConfig {
 
     public static CobbleTransformationsConfig getConfig(){
         File dir = ZCrystals.INSTANCE.getConfigDir();
-        dir.mkdirs();
         Gson gson = Adapters.MAIN_CONFIG_GSON;
         File file = new File(dir, "competitivebattles.json");
         JsonReader reader = null;
@@ -56,11 +53,9 @@ public class CobbleTransformationsConfig {
     public static void updateConfig(CobbleTransformationsConfig config){
 
         File dir = ZCrystals.INSTANCE.getConfigDir();
-        dir.mkdirs();
         Gson gson = Adapters.MAIN_CONFIG_GSON;
         try{
             File file = new File(dir,"competitivebattles.json");
-            file.createNewFile();
             FileWriter writer = new FileWriter(file);
             String json = gson.toJson(config);
             writer.write(json);

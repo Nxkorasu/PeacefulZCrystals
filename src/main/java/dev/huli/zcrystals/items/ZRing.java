@@ -34,12 +34,12 @@ public class ZRing extends SimplePolymerItem {
     }
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
-        if(Cobblemon.playerData.get(playerEntity).getKeyItems().contains(new Identifier("cobblemon:z_ring"))){
+        if(Cobblemon.playerDataManager.getGenericData(playerEntity.getUuid()).getKeyItems().contains(Identifier.of("cobblemon:z_ring"))){
             playerEntity.sendMessage(Text.literal("You already have the ability to use Z-Moves!").formatted(Formatting.RED),true);
             return TypedActionResult.fail(playerEntity.getStackInHand(hand));
         }
         else {
-            Cobblemon.playerData.get(playerEntity).getKeyItems().add(new Identifier("cobblemon:z_ring"));
+            Cobblemon.playerDataManager.getGenericData(playerEntity.getUuid()).getKeyItems().add(Identifier.of("cobblemon:z_ring"));
             playerEntity.sendMessage(Text.literal("You obtained the ability to use Z-Moves!").formatted(Formatting.GREEN),true);
             playerEntity.getStackInHand(hand).decrement(1);
             return TypedActionResult.success(playerEntity.getStackInHand(hand));

@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      {
+        "item": "zcrystals:normalium_z"
+      },
+      {
+        "item": "zcrystals:firium_z"
+      },
+      {
+        "item": "zcrystals:waterium_z"
+      },
+      {
+        "item": "zcrystals:grassium_z"
+      },
+      {
+        "item": "zcrystals:fairium_z"
+      },
+      {
+        "item": "zcrystals:psychium_z"
+      },
+      {
+        "item": "zcrystals:electrium_z"
+      },
+      {
+        "item": "zcrystals:darkinium_z"
+      },
+      {
+        "item": "zcrystals:icium_z"
+      }
+    ]
+  ],
+  "result": {
+    "id": "zcrystals:eevium_z",
+    "count": 1
+  }
+}

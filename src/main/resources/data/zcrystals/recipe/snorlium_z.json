@@ -1,14 +1,14 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [{
-    "item": "zcrystals:pikanium_z"
+    "item": "zcrystals:normalium_z"
   },
     {
-      "item": "minecraft:diamond_helmet"
+      "item": "cobblemon:leftovers"
     }
   ],
   "result": {
-    "item":"zcrystals:pikashunium_z",
+    "id":"zcrystals:snorlium_z",
     "count": 1
   }
 }
