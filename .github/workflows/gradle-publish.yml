@@ -8,12 +8,10 @@
 name: Gradle Package
 
 on:
-  release:
-    types: [created]
+  workflow_dispatch:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -34,7 +32,9 @@ jobs:
 
     - name: Build with Gradle
       run: ./gradlew build
-
+      #Verify the package
+    - name: Verify build
+      run: test -f build/libs/*.jar
     # The USERNAME and TOKEN need to correspond to the credentials environment variables used in
     # the publishing section of your build.gradle
     - name: Publish to GitHub Packages
