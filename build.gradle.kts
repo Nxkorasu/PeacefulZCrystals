@@ -7,7 +7,7 @@ plugins {
 
 
 group = "dev.huli"
-version = "1.2.1"
+version = "1.2.3"
 
 architectury {
     platformSetupLoomIde()
@@ -16,10 +16,9 @@ architectury {
 
 loom {
     silentMojangMappingsLicense()
-    /*
     mixin {
         defaultRefmapName.set("mixins.${project.name}.refmap.json")
-    }*/
+    }
 }
 repositories {
     mavenCentral()
@@ -28,7 +27,7 @@ repositories {
 }
 dependencies {
     minecraft("com.mojang:minecraft:1.21.1")
-    mappings("net.fabricmc:yarn:1.21.1+build.3")
+    mappings("net.fabricmc:yarn:1.21.1+build.3:v2")
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.9.0") // No me puto lo creo - Cant fucking belive it
     modImplementation("net.fabricmc:fabric-loader:0.16.9")
     modImplementation(include("eu.pb4","polymer-core","0.9.17+1.21.1"))
@@ -36,7 +35,7 @@ dependencies {
     modImplementation(include("eu.pb4","polymer-resource-pack","0.9.17+1.21.1"))
     modImplementation(include("eu.pb4","polymer-virtual-entity","0.9.17+1.21.1"))
     modImplementation("net.fabricmc.fabric-api:fabric-api:0.107.0+1.21.1")
-    modImplementation("com.cobblemon:fabric:1.6.0+1.21.1")
+    modImplementation("com.cobblemon:fabric:1.6.1+1.21.1")
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
