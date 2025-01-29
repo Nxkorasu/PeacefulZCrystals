@@ -1,5 +1,5 @@
-# Hulis Z-Crystals
-> Hulis Z-Crystals is a mod that adds Z-Crystals to Minecraft´s mod "Cobblemon"<br>
+# Peaceful Z-Crystals
+> Peaceful Z-Crystals is a mod fork that adds Z-Crystals to Minecraft´s mod "Cobblemon", oriented to peaceful worlds/servers<br>
 
 ## Table of Contents
 - [Configuration](#configuration)
