@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "dev.huli.zcrystals.mixin",
+  "package": "dev.nxkorasu.zcrystals.mixin",
   "compatibilityLevel": "JAVA_16",
   "minVersion": "0.8",
   "client": [],

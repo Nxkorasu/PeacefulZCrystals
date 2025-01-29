@@ -1,21 +1,21 @@
 {
   "schemaVersion": 1,
-  "id": "huliszcrystals",
-  "version": "1.5",
-  "name": "HulisZCrystals",
-  "description": "Adds Z Crystals to cobblemon",
+  "id": "peacefulzcrystals",
+  "version": "1.0.1",
+  "name": "PeacefulZCrystals",
+  "description": "Adds Z Crystals to cobblemon, Peaceful Focused",
   "authors": [
     "DujmovicD",
     "UnsafeDodo",
     "Nxkorasu"
   ],
   "contact": {
-    "repo": "https://github.com/Nxkorasu/HulisZCrystals"
+    "repo": "https://github.com/Nxkorasu/PeacefulZCrystals"
   },
   "environment": "*",
   "entrypoints": {
     "main": [
-      "dev.huli.zcrystals.fabric.CobblemonFabric"
+      "dev.nxkorasu.zcrystals.fabric.CobblemonFabric"
     ],
     "client": []
   },

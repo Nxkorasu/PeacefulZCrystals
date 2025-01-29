@@ -1,4 +1,4 @@
-rootProject.name = "HulisZCrystals"
+rootProject.name = "PeacefulZCrystals"
 
 pluginManagement {
     repositories {
