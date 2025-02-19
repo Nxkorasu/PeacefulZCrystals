@@ -6,7 +6,7 @@ plugins {
 }
 
 group = "dev.nxkorasu"
-version = "1.0.1"
+version = "1.1.1"
 
 architectury {
     platformSetupLoomIde()
@@ -15,10 +15,9 @@ architectury {
 
 loom {
     silentMojangMappingsLicense()
-    /*
     mixin {
         defaultRefmapName.set("mixins.${project.name}.refmap.json")
-    }*/
+    }
 }
 repositories {
     mavenCentral()

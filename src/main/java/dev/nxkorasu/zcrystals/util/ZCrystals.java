@@ -21,12 +21,14 @@ public class ZCrystals {
             flyiniumZModelData, ghostiumZModelData, grassiumZModelData, groundiumZModelData, iciumZModelData, inciniumZModelData, kommoniumZModelData,
             lunaliumZModelData,lycaniumZModelData,marshadiumZModelData, mewniumZModelData, mimikiumZModelData, normaliumZModelData,
             pikaniumZModelData,pikashuniumZModelData, poisoniumZModelData, primariumZModelData, psychiumZModelData, rockiumZModelData, snorliumZModelData,
-            solganiumZModelData, steeliumZModelData, tapuniumZModelData, ultranecroziumZModelData, wateriumZModelData, blankZCrystalModelData, zringModelData, boosterenergyModelData;
+            solganiumZModelData, steeliumZModelData, tapuniumZModelData, ultranecroziumZModelData, wateriumZModelData, blankZCrystalModelData, zringModelData, boosterenergyModelData, teraorbModelData;
 
     public static final BlankZCrystal BLANK_Z_CRYSTAL = Registry.register(Registries.ITEM, Identifier.of(MOD_ID, "blank_z_crystal"),
             new BlankZCrystal(new Item.Settings().maxCount(1).rarity(Rarity.EPIC), Items.EMERALD));
     public static final ZRing Z_RING = Registry.register(Registries.ITEM, Identifier.of(MOD_ID, "z_ring"),
             new ZRing(new Item.Settings().maxCount(1).rarity(Rarity.EPIC), Items.EMERALD));
+    public static final TeraOrb TERA_ORB = Registry.register(Registries.ITEM, Identifier.of(MOD_ID, "tera_orb"),
+            new TeraOrb(new Item.Settings().maxCount(1).rarity(Rarity.EPIC), Items.EMERALD));
 
     public static final AloraichiumZ ALORAICHIUM_Z = Registry.register(Registries.ITEM, Identifier.of(MOD_ID, "aloraichium_z"),
             new AloraichiumZ(new Item.Settings().maxCount(1).rarity(Rarity.EPIC), Items.EMERALD));
@@ -105,7 +107,6 @@ public class ZCrystals {
     public static void requestModel(){
         blankZCrystalModelData = PolymerResourcePackUtils.requestModel(Items.EMERALD, Identifier.of(MOD_ID, "item/blank_z_crystal"));
         zringModelData = PolymerResourcePackUtils.requestModel(Items.EMERALD, Identifier.of(MOD_ID, "item/z_ring"));
-
         aloraichiumZModelData = PolymerResourcePackUtils.requestModel(Items.EMERALD, Identifier.of(MOD_ID, "item/aloraichium_z"));
         buginiumZModelData = PolymerResourcePackUtils.requestModel(Items.EMERALD, Identifier.of(MOD_ID, "item/buginium_z"));
         darkiniumZModelData = PolymerResourcePackUtils.requestModel(Items.EMERALD, Identifier.of(MOD_ID, "item/darkinium_z"));
@@ -142,6 +143,7 @@ public class ZCrystals {
         ultranecroziumZModelData = PolymerResourcePackUtils.requestModel(Items.EMERALD, Identifier.of(MOD_ID, "item/ultranecrozium_z"));
         wateriumZModelData = PolymerResourcePackUtils.requestModel(Items.EMERALD, Identifier.of(MOD_ID, "item/waterium_z"));
         boosterenergyModelData = PolymerResourcePackUtils.requestModel(Items.EMERALD, Identifier.of(MOD_ID, "item/booster_energy"));
+        teraorbModelData = PolymerResourcePackUtils.requestModel(Items.EMERALD, Identifier.of(MOD_ID, "item/tera_orb"));
 
     }
     public static final ItemGroup Z_CRYSTALS = FabricItemGroup.builder()
@@ -185,6 +187,7 @@ public class ZCrystals {
                 entries.add(WATERIUM_Z);
                 entries.add(BLANK_Z_CRYSTAL);
                 entries.add(Z_RING);
+                entries.add(TERA_ORB);
                 entries.add(BOOSTER_ENERGY);
             }))
             .build();
