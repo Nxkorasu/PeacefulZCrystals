@@ -78,7 +78,7 @@ Once you have the Z-Ring you need to right-click in the Air to enable using Z-Mo
 > ### Pikanium Z
 > Made by right-clicking a Lightning Rod with an Electrium Z<br>
 > ### Pikashunium Z
-> Made by crafting an Electric Z-Crystal with a diamond helmet in a shapeless recipe<br>
+> Made by crafting an Pikachum Z-Crystal with a diamond helmet in a shapeless recipe<br>
 > ![Pikashunium Z](https://i.imgur.com/aHxAvlc.png)<br>
 > ### Tapunium Z
 > Made by right-clicking Brain Coral Block with a Fairium Z<br>
