@@ -1,7 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
-    [
       {
         "item": "zcrystals:normalium_z"
       },
@@ -29,7 +28,6 @@
       {
         "item": "zcrystals:icium_z"
       }
-    ]
   ],
   "result": {
     "id": "zcrystals:eevium_z",
