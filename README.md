@@ -115,5 +115,4 @@ Once you have the Z-Ring you need to right-click in the Air to enable using Z-Mo
 > Resource Pack included with the repo<br>
 ## Credits
 > [Booster energy](https://www.deviantart.com/anarlaurendil/gallery) sprite by anarlaurendil
-> [Tera orb]([https://www.newgrounds.com/art/view/skylightningz/tera-orb-pixel-art](https://www.newgrounds.com/art/view/skylightningz/tera-orb-pixel-art))
- texture by skylightningz
+> [Tera orb](https://www.newgrounds.com/art/view/skylightningz/tera-orb-pixel-art) texture by skylightningz
