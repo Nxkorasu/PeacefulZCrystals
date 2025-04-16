@@ -109,8 +109,10 @@ Once you have the Z-Ring you need to right-click in the Air to enable using Z-Mo
 > ## Booster energy
 > Made by using this recipe:<br>
 > ![Booster Energy](https://i.imgur.com/wO3dszw.png)
+> ## Tera Orb (Testing Only)
 ## Serverside Resource Pack
 > The Mod comes with a Serverside Resource Pack that changes the Z-Crystals to look like the ones from the games<br>
 > Resource Pack included with the repo<br>
 ## Credits
 > [Booster energy](https://www.deviantart.com/anarlaurendil/gallery) sprite by anarlaurendil
+> [Tera orb](https://www.newgrounds.com/art/view/skylightningz/tera-orb-pixel-art) texture by skylightningz
