@@ -21,7 +21,7 @@
 > To get started you need 2 things:
 >>Some Blank Z-Crystals ![Blank Z-Crystal](https://i.imgur.com/neM2KgG_d.webp?maxwidth=760&fidelity=grand)<br>
 >>A Z-Ring ![Z-Ring](https://i.imgur.com/B7kWRbp_d.webp?maxwidth=760&fidelity=grand)
-Once you have the Z-Ring you need to right-click in the Air to enable using Z-Moves<br>
+> Once you have the Z-Ring you need to right-click in the Air to enable using Z-Moves<br>
 > Once you do that you will have a button for Z-Moves in your Battle GUI when<br>
 > a Pokémon is holding a Z-Crystal that can use a Z-Move.<br>
 
@@ -56,15 +56,15 @@ Once you have the Z-Ring you need to right-click in the Air to enable using Z-Mo
 > ### Fairium Z
 > Made by right-clicking an Amethyst Block with a Blank Z-Crystal<br>
 > ### Dragonium Z
-> Made by right-clicking an Dragon Head Frame with a Blank Z-Crystal<br>
+> Made by right-clicking an Ender Chest with a Blank Z-Crystal<br>
 > ### Buginium Z
 > Made by right-clicking a Beehive with a Blank Z-Crystal<br>
 > ### Psychium Z
-> Made by right-clicking an End Gateway with a Blank Z-Crystal<br>
+> Made by right-clicking an Enchanting Table with a Blank Z-Crystal<br>
 > ### Groundium Z
 > Made by right-clicking a Mud Block with a Blank Z-Crystal<br>
 > ### Flyinium Z
-> Made by right-clicking a non-dyed Shulker Box with a Blank Z-Crystal<br>
+> Made by right-clicking a non-tinted Glass block while being at height 100+ with a Blank Z-Crystal<br>
 
 ## Pokémon Specific Z-Crystals
 > ### Aloraichium Z
@@ -95,7 +95,7 @@ Once you have the Z-Ring you need to right-click in the Air to enable using Z-Mo
 > ### Lunalium Z
 > Made by right-clicking an End Stone with a Psychium Z<br>
 > ### Ultranecrozium Z
-> Made by right-clicking a Beacon with a Psychium Z (Currently not working in battle)<br>
+> Made by right-clicking Obsidian with a Psychium Z (Currently not working in battle)<br>
 > ### Eevium Z
 > Made crafting all the eevee-lution types´ z crystals with a Normalium Z<br>
 > ![Eevium Z](https://i.imgur.com/dKQ1nVQ.png)
@@ -109,7 +109,8 @@ Once you have the Z-Ring you need to right-click in the Air to enable using Z-Mo
 > ## Booster energy
 > Made by using this recipe:<br>
 > ![Booster Energy](https://i.imgur.com/wO3dszw.png)
-> ## Tera Orb (Testing Only)
+> ## Tera Orb (Testing Item)
+> ![Tera Orb](https://i.imgur.com/uD5o8BJ.png)
 ## Serverside Resource Pack
 > The Mod comes with a Serverside Resource Pack that changes the Z-Crystals to look like the ones from the games<br>
 > Resource Pack included with the repo<br>
