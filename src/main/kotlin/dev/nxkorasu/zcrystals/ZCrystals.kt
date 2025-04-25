@@ -7,7 +7,6 @@ import com.cobblemon.mod.common.platform.events.ServerEvent
 import com.mojang.brigadier.CommandDispatcher
 import dev.nxkorasu.zcrystals.commands.GiveKeyItemCommand
 import dev.nxkorasu.zcrystals.config.CobbleTransformationsConfig
-import dev.nxkorasu.zcrystals.event.CobbleEvents
 import dev.nxkorasu.zcrystals.permissions.CobbleTransformationsPermissions
 import dev.nxkorasu.zcrystals.util.BattleItemUtil
 import dev.nxkorasu.zcrystals.util.ZCrystals
@@ -42,8 +41,6 @@ object ZCrystals {
         ZCrystals.registerItemGroup()
         // Register Battle Items
         BattleItemUtil.registerServerSideItems()
-        //Register Events
-        CobbleEvents.register()
         // Load official Cobblemon's config.
         CobblemonConfig()
         CommandRegistrationCallback.EVENT.register(
