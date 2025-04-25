@@ -196,4 +196,5 @@ public class ZCrystals {
         Identifier test;
         Registry.register(Registries.ITEM_GROUP,test = Identifier.of(MOD_ID, "zcrystals"), Z_CRYSTALS);
     }
+
 }

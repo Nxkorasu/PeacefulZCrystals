@@ -19,6 +19,11 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.Objects;
+
+import static dev.nxkorasu.zcrystals.util.ZCrystals.BLANK_Z_CRYSTAL;
+import static dev.nxkorasu.zcrystals.util.ZCrystals.TERA_ORB;
+
 public class TeraOrb extends SimplePolymerItem {
     PolymerModelData modelData;
     public TeraOrb(Settings settings, Item polymerItem) {
@@ -37,13 +42,13 @@ public class TeraOrb extends SimplePolymerItem {
     }
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
-        if(Cobblemon.playerDataManager.getGenericData(playerEntity.getUuid()).getKeyItems().remove(Identifier.of("cobblemon:tera_orb"))){
-            playerEntity.sendMessage(Text.literal("You disabled the ability to Terastalize").formatted(Formatting.RED),true);
-            return TypedActionResult.fail(playerEntity.getStackInHand(hand));
+        ItemStack mainHand = Objects.requireNonNull(playerEntity.getMainHandStack());
+        ItemStack offHand = Objects.requireNonNull(playerEntity.getOffHandStack());
+        if(!offHand.getItem().equals(TERA_ORB)){
+            mainHand.decrement(1);
+        }else{
+            offHand.decrement(1);
         }
-        else {
-            Cobblemon.playerDataManager.getGenericData(playerEntity.getUuid()).getKeyItems().add(Identifier.of("cobblemon:tera_orb"));
-            playerEntity.sendMessage(Text.literal("You activated the ability to Terastalize!").formatted(Formatting.GREEN),true);
             return TypedActionResult.success(playerEntity.getStackInHand(hand));
-        }
-    }}
+    }
+}
