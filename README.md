@@ -110,7 +110,6 @@
 > Made by using this recipe:<br>
 > ![Booster Energy](https://i.imgur.com/wO3dszw.png)
 > ## Tera Orb (Testing Item)
-> ![Tera Orb](https://i.imgur.com/uD5o8BJ.png)
 ## Serverside Resource Pack
 > The Mod comes with a Serverside Resource Pack that changes the Z-Crystals to look like the ones from the games<br>
 > Resource Pack included with the repo<br>
